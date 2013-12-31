@@ -15,5 +15,4 @@ install: all
 	$(ADB) install -r bin/${PROJNAME}-debug.apk
 
 clean:
-	rm -rf bin/*
-	rm -rf gen/*
+	rm -rf bin/* gen/*
