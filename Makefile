@@ -13,3 +13,6 @@ $(APK_DEBUG): $(JAVA_FILES)
 
 install: all
 	$(ADB) install -r bin/${PROJNAME}-debug.apk
+
+clean:
+	rm -rf bin/*

@@ -5,8 +5,4 @@
 /home/pace/acv/res/drawable-hdpi/ic_launcher.png \
 /home/pace/acv/res/drawable-xhdpi/ic_launcher.png \
 /home/pace/acv/res/drawable-ldpi/ic_launcher.png \
-/home/pace/acv/bin/res/drawable-mdpi/ic_launcher.png \
-/home/pace/acv/bin/res/drawable-hdpi/ic_launcher.png \
-/home/pace/acv/bin/res/drawable-xhdpi/ic_launcher.png \
-/home/pace/acv/bin/res/drawable-ldpi/ic_launcher.png \
 /home/pace/acv/bin/AndroidManifest.xml \
