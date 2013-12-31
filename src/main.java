@@ -1,4 +1,4 @@
-package app.main;
+package app.pack;
 
 import android.app.Activity;
 import android.os.Bundle;
