@@ -4,3 +4,5 @@ put adt-bundle-linux-x86_64 in /opt/adt
 
 run ./initial-setup
 
+
+command line advice: http://geosoft.no/development/android.html

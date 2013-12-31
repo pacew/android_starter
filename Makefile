@@ -16,3 +16,5 @@ install: all
 
 clean:
 	rm -rf bin/*
+	rm -f gen/org/willisson/acv/R.java
+	rm -f gen/R.java.d
