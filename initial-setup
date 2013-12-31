@@ -1,7 +1,7 @@
 #! /bin/sh
 
 dir=`pwd`
-projname=`basename $dir`
+PROJNAME=`basename $dir`
 
 ADT_HOME=/opt/adt
 
@@ -15,13 +15,19 @@ android=${ADT_HOME}/sdk/tools/android
 
 target=`$android list targets --compact | tail -1`
 
+(
+    echo "# this files is included in both shell scripts and Makefiles"
+    echo "ADT_HOME=${ADT_HOME}"
+    echo "PROJNAME=${PROJNAME}"
+) > conf.sh
+
 echo "# run this:"
 echo "$android create project \
 --target ${target} \
---name ${projname} \
+--name ${PROJNAME} \
 --path . \
 --activity MainActivity \
---package org.willisson.${projname}"
+--package org.willisson.${PROJNAME}"
 
 
 vers=`echo $target | sed 's/.*-//'`
