@@ -1,0 +1,24 @@
+#! /bin/sh
+
+dir=`pwd`
+projname=`basename $dir`
+
+ADT_HOME=/opt/adt
+
+if [ ! -d ${ADT_HOME} ]
+then
+    echo "can't find ADT at ${ADT_HOME}"
+    exit 1
+fi
+
+android=${ADT_HOME}/sdk/tools/android
+
+default_target=`$android list targets --compact | tail -1`
+
+echo "# run this:"
+echo $android create project \
+--target ${default_target} \
+--name ${projname} \
+--path . \
+--activity MainActivity \
+--package org.willisson.${projname}
