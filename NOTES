@@ -4,7 +4,3 @@ put adt-bundle-linux-x86_64 in /opt/adt
 
 run ./initial-setup
 
-to see the list of possible targets:
-
-/opt/adt/sdk/tools/android list targets
-

@@ -13,12 +13,25 @@ fi
 
 android=${ADT_HOME}/sdk/tools/android
 
-default_target=`$android list targets --compact | tail -1`
+target=`$android list targets --compact | tail -1`
 
 echo "# run this:"
-echo $android create project \
---target ${default_target} \
+echo "$android create project \
+--target ${target} \
 --name ${projname} \
 --path . \
 --activity MainActivity \
---package org.willisson.${projname}
+--package org.willisson.${projname}"
+
+
+vers=`echo $target | sed 's/.*-//'`
+
+echo ""
+echo "# then add this to AndroidManifest.xml:"
+echo "<uses-sdk android:minSdkVersion='${vers}' \
+ android:targetSdkVersion='${vers}' />"
+
+echo ""
+echo "# to see possible targets:"
+echo "$android list targets"
+
