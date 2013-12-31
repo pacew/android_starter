@@ -1,0 +1,12 @@
+initial bootstrap
+
+put adt-bundle-linux-x86_64 in /opt/adt
+
+/opt/adt/sdk/tools/android list targets
+
+note target id (on a line like id: 1 or ändroid-17
+
+for project named "acv"
+
+/opt/adt/sdk/tools/android create project --target android-17 --name acv --path `pwd` --activity MainActivity --package org.willisson.acv
+
