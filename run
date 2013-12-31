@@ -1,5 +1,0 @@
-#! /bin/sh
-
-. ./conf.sh
-
-${ADT_HOME}/sdk/platform-tools/adb install -r bin/${PROJNAME}-debug.apk
